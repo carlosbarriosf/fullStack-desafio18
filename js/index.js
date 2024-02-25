@@ -84,6 +84,16 @@ function homePage () {
                     card.element.classList.toggle('hide', !isVisible)
                 }
             })
+            const hiddenCards = cardObjects.map(card => {
+                const isHidden = card.element.classList.contains('hide');
+                return isHidden
+            })
+            const errorMessage = document.querySelector('[data-nothing-found]');
+            if(hiddenCards.indexOf(false) === -1) {
+                errorMessage.style.display = 'block';
+            } else {
+                errorMessage.style.display = 'none';
+            }
         })
     })
     xhr.send();
