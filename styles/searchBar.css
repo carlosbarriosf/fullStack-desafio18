@@ -1,0 +1,39 @@
+.controls {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--color-background);
+    padding: 0.5rem 0;
+}
+
+
+.controls__searchBar-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.controls__searchIcon{
+    display: flex;
+    align-items: center;
+}
+
+.controls__searchIcon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.controls__searchBar, .selectYear {
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    background-color: var(--color-background);
+    padding: 0.5rem;
+}
+
+.selectYear {
+    width: 96px;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+<h1>Agregar una nueva película</h1>
+<form data-form action="" class="form">
+    <label for="title">Título</label>
+    <input data-title-input type="text" name="title" id="title" minlength="2" maxlength="40" required>    
+    <label for="genre">Género</label>
+    <input data-genre-input type="text" name="genre" id="genre" required minlength="4" max="15">    
+    <label for="year">Fecha de estreno</label>
+    <input data-year-input type="number" name="year" id="year"  min="1980" max="2024" required> 
+    <label for="description">Descripción</label>
+    <textarea data-description-input name="description" id="description" cols="30" rows="10" minlength="30" maxlength="120" required></textarea>
+    <div class="btn-container">
+        <button data-submit-btn class="btn" type="submit">Añadir</button>
+    </div>  
+</form>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/searchBar.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <h2 class="nav__title">Películas</h2>
+            <ul class="nav__list">
+                <li><a class="nav__link" onclick="changeToPage('home')">Inicio</a></li>
+                <li><a class="nav__link" onclick="changeToPage('addMovie')">Añadir Película</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <div data-card-container class="card-container">
+            <template data-card-template>
+                <div class="card">
+                    <h2 data-card-title class="card__title"></h2>
+                    <p data-card-date class="card__premiereDate"></p>
+                    <p class="card__genre">Género: <span data-card-genre></span></p>
+                    <div class="card__description-container">
+                        <h3 class="card__subtitle">Sinópsis</h3>
+                        <p data-card-description class="card__description"></p>
+                    </div>
+                </div>
+            </template>
+        </div> -->
+    </main>
+
+    <script src="js/movies.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

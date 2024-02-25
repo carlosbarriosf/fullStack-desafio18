@@ -1,0 +1,48 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));
+    gap: 1.25rem;
+    padding: 1rem;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border: 1px solid white;
+    padding:16px;
+    border-radius: 6px;
+    /* height: 350px; */
+}
+
+.card__title {
+    color: var(--color-main);
+    font-weight: 500;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.card__premiereDate, .card__genre {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}
+
+.card__subtitle {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-main);
+    margin-bottom: 0.25rem;
+}
+
+.card__description {
+    font-size: 0.8rem;
+    font-size: 100;
+    color: #e7e5e4;
+}
+
+.hide {
+    display: none;
+}
